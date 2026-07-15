@@ -1,15 +1,19 @@
-
-const name = document.getElementById("name").value;
-const animal = document.getElementById("animal").value;
-const number = document.getElementById("number").value;
-const adjective = document.getElementById("adjective").value;
-const theme = document.getElementById("theme").value;
-const story = document.getElementById("story");
-
-const storyText =
-  `Once upon a time, ${name} discovered a mysterious ${theme} adventure. ` +
-  `While exploring, ${name} encountered ${number} ${animal}${number > 1 ? "s" : ""}. ` +
-  `Although feeling very ${adjective}, ${name} decided to keep going. ` +
-  `In the end, the adventure became an unforgettable story with a happy ending.`;
-
-story.innerHTML = 
+function submitForm() {
+    let fname = document.getElementsByName("fname")[0].value;
+    let animal = document.getElementsByName("Animal")[0].value;
+    let number = document.getElementsByName("Number")[0].value;
+    let adjective = document.getElementsByName("Adjective")[0].value;
+    let theme = document.getElementById("theme").value;
+    if (fname === "" || animal === "" || number === "" || adjective === "") {
+        alert("Please fill all the fields!");
+        return;
+    }
+    alert(
+        "Form Submitted Successfully!\n\n" +
+        "Name: " + fname +
+        "\nAnimal: " + animal +
+        "\nNumber: " + number +
+        "\nAdjective: " + adjective +
+        "\nTheme: " + theme
+    );
+}
