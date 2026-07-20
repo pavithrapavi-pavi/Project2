@@ -1,4 +1,4 @@
-function submitForm() {
+function SubmitForm() {
     let fname = document.getElementsByName("fname")[0].value;
     let animal = document.getElementsByName("Animal")[0].value;
     let number = document.getElementsByName("Number")[0].value;
