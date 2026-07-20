@@ -8,7 +8,7 @@ function SubmitForm() {
         alert("Please fill all the fields!");
         return;
     }
-    var story = document.getElementById("story");
+    var story = document.getElementById("Story");
 
     const storyText =
         `Once upon a time, ${fname} discovered a mysterious ${theme} adventure. ` +
@@ -16,6 +16,6 @@ function SubmitForm() {
         `Although feeling very ${adjective}, ${fname} decided to keep going. ` +
         `In the end, the adventure became an unforgettable story with a happy ending.`;
 
-    story.innerHTML = storyText;
 
+    story.innerHTML = "<p>" + storyText + "</p>";
 }
