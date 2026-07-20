@@ -1,4 +1,4 @@
-function submitForm() {
+function SubmitForm() {
     let fname = document.getElementsByName("fname")[0].value;
     let animal = document.getElementsByName("Animal")[0].value;
     let number = document.getElementsByName("Number")[0].value;
@@ -8,12 +8,14 @@ function submitForm() {
         alert("Please fill all the fields!");
         return;
     }
-    alert(
-        "Form Submitted Successfully!\n\n" +
-        "Name: " + fname +
-        "\nAnimal: " + animal +
-        "\nNumber: " + number +
-        "\nAdjective: " + adjective +
-        "\nTheme: " + theme
-    );
+    var story = document.getElementById("story");
+
+    const storyText =
+        `Once upon a time, ${fname} discovered a mysterious ${theme} adventure. ` +
+        `While exploring, ${fname} encountered ${number} ${animal}${number > 1 ? "s" : ""}. ` +
+        `Although feeling very ${adjective}, ${fname} decided to keep going. ` +
+        `In the end, the adventure became an unforgettable story with a happy ending.`;
+
+    story.innerHTML = storyText;
+
 }
