@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 30px;
-    background-color: #ffffff;
+    background-color: #f9f4f4f5;
 }
 
 h1,
@@ -22,33 +22,34 @@ select,
 button {
     padding: 10px;
     font-size: 16px;
+    border-width: thick;
 }
 
 button {
-    background-color: #0909dc;
+    background-color: #1bdc09;
     color: white;
-    border: none;
+    border-width: thick;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #eceeef;
+    background-color: #0a4b03;
 }
 
 button:focus {
-    outline: 3px solid rgb(30, 0, 255);
+    outline: 3px solid rgb(14, 13, 13);
 }
 
 #story {
     margin: 30px auto;
     width: 350px;
-    border: 2px solid black;
+    border: 2px solid rgb(13, 13, 13);
     background-color: white;
     padding: 20px;
     min-height: 80px;
 }
 
 .highlight {
-    color: rgba(245, 245, 78, 0.996);
+    color: rgba(218, 18, 225, 0.996);
     font-weight: bold;
 }
